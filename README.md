@@ -1,6 +1,6 @@
 # automating_formy
 
-The goal of this project is to fully write automated test cases for the following website <https://www.saucedemo.com/>.
+The goal of this project is to fully write automated test cases for the following website: <https://www.saucedemo.com/>.
 
 Automating and testing this website is a followup to my last project: <https://github.com/MariusB5/automating_formy>.
 
