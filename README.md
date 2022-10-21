@@ -21,5 +21,3 @@ By completing this project, I aim to expend and refine my skills as a QA Automat
 ## DISCLAIMER
 
 This project will be started after I finish my current project found at: <https://github.com/MariusB5/automating_formy>.
-
-## **!!WORK_IN_PROGRESS!!**
