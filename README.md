@@ -16,4 +16,4 @@ The technology stack used for this project is the following:
 
 By completing this project, I aim to expand and refine my skills as a QA Automation Engineer.
 
-## This project will be started after I finish my current project: <https://github.com/MariusB5/automating_formy>.
+## To be started...
