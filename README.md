@@ -1,8 +1,6 @@
-# automating_formy
+# automating_swag_labs
 
 The goal of this project is to fully write automated test cases for the following website: <https://www.saucedemo.com/>.
-
-Automating and testing this website is a followup to my last project: <https://github.com/MariusB5/automating_formy>.
 
 The technology stack used for this project is the following:
 
@@ -16,8 +14,6 @@ The technology stack used for this project is the following:
 - **GitHub** as the version control system
 - more than 5 years of software testing experience as a QA Engineer
 
-By completing this project, I aim to expend and refine my skills as a QA Automation Engineer.
+By completing this project, I aim to expand and refine my skills as a QA Automation Engineer.
 
-## Note
-
-This project will be started after I finish my current project found at: <https://github.com/MariusB5/automating_formy>.
+## This project will be started after I finish my current project: <https://github.com/MariusB5/automating_formy>.
