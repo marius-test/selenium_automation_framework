@@ -3,7 +3,7 @@
 The goal of this project is to build an automation framework and write a complete suite of automated test cases for the following website:  
 <https://www.saucedemo.com/>
 
-## Tech Stack
+### Tech Stack
 
 - **Python** - Main programming language  
 - **Pytest** - Testing framework  
@@ -15,10 +15,10 @@ The goal of this project is to build an automation framework and write a complet
 - **PyCharm** - Secondary IDE  
 - **GitHub** - Version control platform
 
-## Notes
+### Notes
 
 This project is a personal initiative to expand and refine my skills as a QA Automation Engineer through practical application of UI automation, structured test design, and reporting.
 
-## Status
+### Status
 
 🚧 In planning and design: requirements, framework architecture, and test strategy are underway.
