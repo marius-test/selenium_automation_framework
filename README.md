@@ -1,19 +1,24 @@
 # automating_swag_labs
 
-The goal of this project is to fully write automated test cases for the following website: <https://www.saucedemo.com/>.
+The goal of this project is to build an automation framework and write a complete suite of automated test cases for the following website:  
+<https://www.saucedemo.com/>
 
-The technology stack used for this project is the following:
+## Tech Stack
 
-- **Python 3.10** as the main programming language
-- **unittest** as the testing framework
-- **Selenium WebDriver** as the automation framework
-- **chromedriver** as the main remote control interface
-- **geckodriver** as the secondary remote control interface
-- **Visual Studio Code** as the main integrated development environment
-- **PyCharm** as the secondary integrated development environment
-- **GitHub** as the version control system
-- more than 5 years of software testing experience as a QA Engineer
+- **Python** - Main programming language  
+- **Pytest** - Testing framework  
+- **Selenium WebDriver** - Browser automation  
+- **ChromeDriver** - WebDriver binary for Chrome  
+- **Allure** - Reporting framework  
+- **Page Object Model (POM)** - Design pattern for maintainable test structure  
+- **Visual Studio Code** - Primary IDE  
+- **PyCharm** - Secondary IDE  
+- **GitHub** - Version control platform
 
-By completing this project, I aim to expand and refine my skills as a QA Automation Engineer.
+## Notes
 
-## To be started...
+This project is a personal initiative to expand and refine my skills as a QA Automation Engineer through practical application of UI automation, structured test design, and reporting.
+
+## Status
+
+🚧 To be started...
