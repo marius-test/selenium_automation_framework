@@ -14,8 +14,8 @@ from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-PATH = Service("C:\\Users\\mariu\\chromedriver.exe")
-url = "https://the-internet.herokuapp.com/"
+PATH = Service("C:\\Users\\marius\\webdriver\\chromedriver.exe")
+url = "https://www.saucedemo.com/"
 # driver = webdriver.Chrome(service=PATH)
 # action_chains = ActionChains(driver)
 # alert = Alert(driver)

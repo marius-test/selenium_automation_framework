@@ -2,6 +2,12 @@
     "cSpell.words": [
         "chromedriver",
         "formy",
-        "geckodriver"
-    ]
+        "geckodriver",
+        "pyautogui",
+        "pynput",
+        "pytest",
+        "urllib",
+        "venv"
+    ],
+    "python-envs.pythonProjects": []
 }

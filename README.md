@@ -6,7 +6,7 @@ The goal of this project is to build an automation framework and write a complet
 ### Tech Stack
 
 - **Python** - Main programming language  
-- **Pytest** - Testing framework  
+- **PyTest** - Testing framework  
 - **Selenium WebDriver** - Browser automation  
 - **ChromeDriver** - WebDriver binary for Chrome  
 - **Allure** - Reporting framework  
