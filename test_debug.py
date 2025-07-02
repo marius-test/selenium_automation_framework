@@ -13,35 +13,16 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 
 PATH = Service("C:\\Users\\marius\\webdriver\\chromedriver.exe")
-url = "https://www.saucedemo.com/"
 # driver = webdriver.Chrome(service=PATH)
+driver = webdriver.Chrome(ChromeDriverManager().install())
+
 # action_chains = ActionChains(driver)
 # alert = Alert(driver)
-# test data here
 
-
-class TestName(unittest.TestCase):
-    def setUp(self):
-        self.driver = webdriver.Chrome(service=PATH)
-        driver = self.driver
-        driver.get(url)
-        driver.maximize_window()
-    
-    def test_x(self):
-        driver = self.driver
-        # locators, waits, actions here
-        self.assertEqual(1, 1)
-    
-    def test_y(self):
-        driver = self.driver
-        # locators, waits, actions here
-        self.assertEqual(1, 1)
-    
-    def tearDown(self):
-        self.driver.quit()
-
+url = "https://www.saucedemo.com/"
 
 if __name__ == '__main__':
     unittest.main()
