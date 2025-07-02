@@ -5,15 +5,19 @@ The goal of this project is to build an automation framework and write a complet
 
 ### Tech Stack
 
-- **Python** - Main programming language  
-- **PyTest** - Testing framework  
-- **Selenium WebDriver** - Browser automation  
-- **ChromeDriver** - WebDriver binary for Chrome  
-- **Allure** - Reporting framework  
-- **Page Object Model (POM)** - Design pattern for maintainable test structure  
-- **Visual Studio Code** - Primary IDE  
-- **PyCharm** - Secondary IDE  
-- **GitHub** - Version control platform
+- **Python** — Main programming language  
+- **PyTest** — Testing framework  
+- **Selenium WebDriver** — Browser automation  
+- **ChromeDriver** — WebDriver binary for Chrome  
+- **webdriver-manager** — Automatic browser driver management  
+- **Allure** — Test reporting framework  
+- **Page Object Model (POM)** — Design pattern for maintainable test structure  
+- **Loguru** — Advanced logging library  
+- **Docker** — Containerization for consistent environments and CI/CD  
+- **GitHub** — Version control platform  
+- **GitHub Actions** — CI/CD automation  
+- **Visual Studio Code** — Primary IDE  
+- **PyCharm** — Secondary IDE  
 
 ### Notes
 
