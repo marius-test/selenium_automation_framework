@@ -3,6 +3,7 @@
         "chromedriver",
         "formy",
         "geckodriver",
+        "loguru",
         "pyautogui",
         "pynput",
         "pytest",

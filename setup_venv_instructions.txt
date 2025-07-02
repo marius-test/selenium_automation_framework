@@ -9,7 +9,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\venv\Scripts\Activate.ps1
 
 # install required packages
-pip install selenium pytest allure-pytest requests urllib3 webdriver-manager pyautogui pynput
+pip install selenium pytest allure-pytest loguru requests urllib3 webdriver-manager pyautogui pynput
 
 """
 selenium: automate browser actions for testing web apps

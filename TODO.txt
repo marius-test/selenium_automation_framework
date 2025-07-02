@@ -1,8 +1,7 @@
 TODO webdriver manager
 TODO test configs
-TODO logging
-TODO assertions
+TODO logging with loguru
 TODO test data handling
-TODO github actions
-TODO screenshot on fail
-TODO container
+TODO CI/CD github actions
+TODO screenshot on test fail
+TODO docker container
