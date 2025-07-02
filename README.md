@@ -1,4 +1,4 @@
-# automating_swag_labs
+# selenium_automation_framework
 
 The goal of this project is to build an automation framework and write a complete suite of automated test cases for the following website:  
 <https://www.saucedemo.com/>
