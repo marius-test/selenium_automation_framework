@@ -31,4 +31,4 @@ This project is a personal initiative to expand and refine my skills as a QA Aut
 
 ### Status
 
-🚧 In planning and design: requirements, framework architecture, and test strategy are underway.
+🚧 This project is currently **in progress** and continuously evolving as I automate more features and refine test design and structure. 🚧
