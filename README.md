@@ -8,7 +8,7 @@ The goal is to automate and verify all major functionalities of the Saucedemo e-
 
 The framework is structured for **clarity**, **reusability**, and **modular growth**, allowing easy expansion as new features or test requirements are introduced.
 
-👉 For exploratory UI automation practice across a wide range of web functionalities, see my companion project: selenium_automation_testing [selenium_automation_testing](https://github.com/marius-test/selenium_automation_testing)
+👉 For exploratory Selenium automation testing across a wide range of web functionalities, see my companion project: [selenium_automation_testing](https://github.com/marius-test/selenium_automation_testing)
 
 ---
 
