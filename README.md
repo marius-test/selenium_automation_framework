@@ -4,7 +4,7 @@ Target website: [https://www.saucedemo.com/](https://www.saucedemo.com/)
 
 This project implements a **scalable, maintainable Selenium automation framework** using **Python**, **Pytest**, and the **Page Object Model (POM)** design pattern.
 
-The goal is to automate and verify all major functionalities of the Saucedemo e-commerce site with clean test structure, detailed reporting, logging, and CI/CD integration. It serves both as a professional portfolio and a learning ground for advanced test framework features.
+The goal is to automate and verify all major functionalities of the Saucedemo e-commerce site with clean test structure, detailed reporting, logging, and CI/CD integration. It provides hands-on experience developing advanced test framework features.
 
 The framework is structured for **clarity**, **reusability**, and **modular growth**, allowing easy expansion as new features or test requirements are introduced.
 
