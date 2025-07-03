@@ -1,0 +1,31 @@
+# File: setup_venv_instructions.txt
+# Purpose: Create & configure virtual environment for Selenium automation framework
+
+# ─── Create Virtual Environment ─────────────────────────────────────────────
+python -m venv venv
+
+# ─── Allow PowerShell to Run Scripts in This Session ────────────────────────
+# This avoids the default execution policy block for scripts in Windows
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+# ─── Activate the Virtual Environment ───────────────────────────────────────
+.\venv\Scripts\Activate.ps1
+
+# ─── Install Required Packages ──────────────────────────────────────────────
+pip install selenium pytest allure-pytest loguru requests urllib3 webdriver-manager pyautogui pynput
+
+# ─── Generate requirements.txt ──────────────────────────────────────────────
+# Use this PowerShell-safe command to export installed packages to requirements.txt:
+pip freeze | Out-File -FilePath requirements.txt -Encoding ASCII
+
+# ─── Package Explanations ───────────────────────────────────────────────────
+"""
+selenium         : Automate browser actions for UI testing
+pytest           : Lightweight test runner with powerful fixtures and plugins
+allure-pytest    : Integrates Allure reporting with pytest
+requests         : Simple HTTP requests for REST API testing
+urllib3          : Low-level HTTP library (used by requests internally)
+webdriver-manager: Auto-downloads and manages browser drivers (Chrome, Firefox, etc.)
+pyautogui        : Automates keyboard/mouse actions outside browser scope (e.g., file uploads)
+pynput           : Captures keyboard/mouse input, useful for simulating complex user behavior
+"""
