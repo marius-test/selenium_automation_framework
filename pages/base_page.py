@@ -3,8 +3,8 @@
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.common.action_chains import ActionChains
+# from selenium.webdriver.support.ui import Select
+# from selenium.webdriver.common.action_chains import ActionChains
 
 
 class BasePage:
@@ -33,6 +33,9 @@ class BasePage:
     # optional utilities (commented out)
     # -------------------------------
 
+    # def find_all(self, locator):
+    #     return self.wait.until(EC.presence_of_all_elements_located(locator))
+    
     # def is_visible(self, locator):
     #     try:
     #         return self.wait.until(EC.visibility_of_all_element_located(locator))
