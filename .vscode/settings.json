@@ -8,6 +8,7 @@
         "pyautogui",
         "pynput",
         "pytest",
+        "seletools",
         "urllib",
         "venv"
     ],

@@ -1,0 +1,45 @@
+# File: waits_usage_documentation.txt
+# Purpose: Explain input types and usage for custom Selenium wait helper functions
+
+1. wait_for_visibility(driver, locator, timeout=DEFAULT_TIMEOUT)
+# Waits for the element located by 'locator' tuple (By.<method>, "value") to be visible on the page.
+# Input:
+   - driver: Selenium WebDriver instance
+   - locator: tuple (By.<method>, selector_string), e.g. (By.ID, "element_id")
+   - timeout: optional integer seconds to wait before timing out
+# Returns: WebElement once visible, raises TimeoutException otherwise
+
+2. wait_for_clickable(driver, locator, timeout=DEFAULT_TIMEOUT)
+# Waits for the element located by 'locator' tuple to be clickable (visible and enabled).
+# Input:
+   - driver: Selenium WebDriver instance
+   - locator: tuple (By.<method>, selector_string)
+   - timeout: optional integer seconds
+# Returns: WebElement once clickable
+
+3. wait_for_presence(driver, locator, timeout=DEFAULT_TIMEOUT)
+# Waits for the presence of the element in the DOM, regardless of visibility.
+# Input:
+   - driver: Selenium WebDriver instance
+   - locator: tuple (By.<method>, selector_string)
+   - timeout: optional integer seconds
+# Returns: WebElement once present in DOM
+
+4. wait_for_invisibility(driver, locator, timeout=DEFAULT_TIMEOUT)
+# Waits for the element located by 'locator' tuple to become invisible or removed from the DOM.
+# Input:
+   - driver: Selenium WebDriver instance
+   - locator: tuple (By.<method>, selector_string)
+   - timeout: optional integer seconds
+# Returns: True if element is invisible or not present, False if timeout occurs
+
+5. safe_wait(driver, condition, timeout=DEFAULT_TIMEOUT)
+# Waits safely for any expected condition, returns None on timeout without raising an exception.
+# Input:
+   - driver: Selenium WebDriver instance
+   - condition: expected_conditions callable (e.g., EC.visibility_of_element_located(locator))
+   - timeout: optional integer seconds
+# Returns: Result of condition if successful, None if timeout
+
+# Note: All functions expect a locator tuple (By.<method>, selector_string).
+# Passing a WebElement instead of a locator tuple will cause errors or unintended behavior.

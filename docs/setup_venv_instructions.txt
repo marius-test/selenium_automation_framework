@@ -12,7 +12,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\venv\Scripts\Activate.ps1
 
 # Install Required Packages
-pip install selenium pytest allure-pytest loguru requests urllib3 webdriver-manager pyautogui pynput
+pip install selenium pytest allure-pytest loguru requests urllib3 webdriver-manager pyautogui pynput importlib seletools
 
 # Generate requirements.txt
 # Use this PowerShell-safe command to export installed packages to requirements.txt:
@@ -27,3 +27,5 @@ urllib3             Low-level HTTP library (used by requests internally)
 webdriver-manager   Auto-downloads and manages browser drivers (Chrome, Firefox, etc.)
 pyautogui           Automates keyboard/mouse actions outside browser scope (e.g., file uploads)
 pynput              Captures keyboard/mouse input, useful for simulating complex user behavior
+importlib           Dynamically imports Python modules at runtime (e.g., for loading test modules by name)
+seletools           Provides helper functions and utilities to simplify Selenium browser automation tasks
