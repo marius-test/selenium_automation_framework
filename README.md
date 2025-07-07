@@ -12,7 +12,7 @@ The framework is structured for **clarity**, **reusability**, and **modular grow
 
 ---
 
-### Framework Highlights
+### Framework Features
 
 - **Page Object Model (POM)** for test scalability and maintainability  
 - **Pytest** with fixtures for flexible test execution and setup/teardown  
