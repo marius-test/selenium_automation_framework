@@ -22,6 +22,7 @@ pip freeze | Out-File -FilePath requirements.txt -Encoding ASCII
 selenium            Automate browser actions for UI testing
 pytest              Lightweight test runner with powerful fixtures and plugins
 allure-pytest       Integrates Allure reporting with pytest
+loguru              Simplifies and enhances logging with easy setup, colorful output, and flexible configuration
 requests            Simple HTTP requests for REST API testing
 urllib3             Low-level HTTP library (used by requests internally)
 webdriver-manager   Auto-downloads and manages browser drivers (Chrome, Firefox, etc.)

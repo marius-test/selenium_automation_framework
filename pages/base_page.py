@@ -1,30 +1,37 @@
 # optional utility methods are commented out below.
 # uncomment as test coverage expands and reuse is needed.
 
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 # from selenium.webdriver.support.ui import Select
 # from selenium.webdriver.common.action_chains import ActionChains
+
+from utils.waits import (
+    wait_for_presence,
+    # wait_for_all_presence,
+    # wait_for_visibility,
+    # wait_for_clickable,
+    # wait_for_invisibility,
+    # wait_for_alert,
+)
 
 
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 10)
 
     # -------------------------------
     # common element interaction
     # -------------------------------
       
     def find(self, locator):
-        return self.wait.until(EC.presence_of_element_located(locator))
+        return wait_for_presence(self.driver, locator)
     
     def click(self, locator):
         self.find(locator).click()
         
     def type(self, locator, text):
-        self.find(locator).clear()
-        self.find(locator).send_keys(text)
+        element = self.find(locator)
+        element.clear()
+        element.send_keys(text)
         
     def get_text(self, locator):
         return self.find(locator).text
@@ -34,22 +41,22 @@ class BasePage:
     # -------------------------------
 
     # def find_all(self, locator):
-    #     return self.wait.until(EC.presence_of_all_elements_located(locator))
+    #     return wait_for_all_presence(self.driver, locator)
     
     # def is_visible(self, locator):
     #     try:
-    #         return self.wait.until(EC.visibility_of_all_element_located(locator))
+    #         return wait_for_visibility(self.driver, locator)
     #     except:
     #         return False
         
     # def is_clickable(self, locator):
     #     try:
-    #         return self.wait.until(EC.element_to_be_clickable(locator))
+    #         return wait_for_clickable(self.driver, locator)
     #     except:
     #         return False
         
     # def wait_for_disappear(self, locator, timeout=10):
-    #     WebDriverWait(self.driver, timeout).until(EC.invisibility_of_element(locator))
+    #     wait_for_invisibility(self.driver, locator)
         
     # def select_by_invisible_text(self, locator, text):
     #     select = Select(self.find(locator))
@@ -75,9 +82,9 @@ class BasePage:
     #     self.driver.refresh()
         
     # def accept_alert(self):
-    #     self.wait.until(EC.alert_is_present())
+    #     wait_for_alert(self.driver)
     #     self.driver.switch_to.alert.accept()
         
     # def dismiss_alert(self):
-    #     self.wait.until(EC.alert_is_present())
+    #     wait_for_alert(self.driver)
     #     self.driver.switch_to.alert.dismiss()
