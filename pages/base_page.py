@@ -21,6 +21,14 @@ class BasePage:
     # -------------------------------
     # common element interaction
     # -------------------------------
+    
+    def open(self, url=None):
+        if url is None:
+            if hasattr(self, "URL"):
+                url = self.URL
+            else:
+                raise ValueError("URL must be provided or set as 'URL' attribute on the page.")
+        self.driver.get(url)
       
     def find(self, locator):
         return wait_for_presence(self.driver, locator)
