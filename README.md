@@ -17,7 +17,6 @@ The framework is structured for **clarity**, **reusability**, and **modular grow
 - **Page Object Model (POM)** for test scalability and maintainability  
 - **Pytest** with fixtures for flexible test execution and setup/teardown  
 - **Driver factory** for browser setup abstraction  
-- **Custom logging** using `loguru` for enhanced debugging and traceability  
 - **Allure reports** for rich test output and trend visualization  
 - **Test configuration management** via CLI options or config files  
 - **Headless/visible browser modes** and future multi-browser support  
@@ -33,7 +32,6 @@ The framework is structured for **clarity**, **reusability**, and **modular grow
 - **Selenium WebDriver** - browser automation  
 - **webdriver-manager** - automatic browser driver downloads  
 - **Allure** - test reporting tool  
-- **Loguru** - logging for better observability  
 - **Docker** - for isolated, consistent test environments  
 - **Visual Studio Code** - main IDE  
 - **PyCharm** - secondary IDE  

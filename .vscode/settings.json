@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "addopts",
         "certifi",
         "chromedriver",
         "formy",
@@ -8,6 +9,7 @@
         "pyautogui",
         "pynput",
         "pytest",
+        "Saucedemo",
         "seletools",
         "urllib",
         "venv"

@@ -1,0 +1,20 @@
+# File: pytest_help.txt
+# Purpose: Quick explanation of pytest fixture scopes, especially for Selenium driver fixture
+
+- scope="function" (default):
+  Runs setup and teardown for each test function separately.
+  Ensures clean state per test, avoids side effects.
+
+- scope="class":
+  Runs once per test class, shared by all test methods in that class.
+  Useful to speed up tests grouped in classes.
+
+- scope="module":
+  Runs once per Python file, shared by all tests in that file.
+  Good for expensive setup reused across multiple tests.
+
+- scope="session":
+  Runs once per entire test session.
+  For very expensive resources shared globally.
+
+For Selenium, function scope is common to keep tests isolated.

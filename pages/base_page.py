@@ -7,7 +7,7 @@
 from utils.waits import (
     wait_for_presence,
     # wait_for_all_presence,
-    # wait_for_visibility,
+    wait_for_visibility,
     # wait_for_clickable,
     # wait_for_invisibility,
     # wait_for_alert,
@@ -51,11 +51,11 @@ class BasePage:
     # def find_all(self, locator):
     #     return wait_for_all_presence(self.driver, locator)
     
-    # def is_visible(self, locator):
-    #     try:
-    #         return wait_for_visibility(self.driver, locator)
-    #     except:
-    #         return False
+    def is_visible(self, locator):
+        try:
+            return wait_for_visibility(self.driver, locator)
+        except:
+            return False
         
     # def is_clickable(self, locator):
     #     try:

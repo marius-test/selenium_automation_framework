@@ -1,9 +1,10 @@
 from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
+from config import INVENTORY_URL
 
 
 class InventoryPage(BasePage):
-    URL = "https://www.saucedemo.com/inventory.html"
+    URL = INVENTORY_URL
     
     TITLE = (By.CLASS_NAME, "title")
     
