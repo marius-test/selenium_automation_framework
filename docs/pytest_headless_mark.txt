@@ -1,0 +1,12 @@
+# File: pytest_headless_mark.txt
+# Purpose: Custom marker usage for running tests in headless mode.
+
+# Run a test in headless mode using the custom marker
+
+@pytest.mark.headless(True)
+def test_something(driver):
+    ...
+
+- The driver fixture reads the marker and sets up the browser in headless mode.
+- No change needed in your BasePage or test logic.
+- Headless mode is disabled by default unless marked explicitly.

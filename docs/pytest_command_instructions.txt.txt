@@ -1,10 +1,7 @@
 # File: pytest_help.txt
-# Purpose: Quick reference for pytest run commands and fixture scopes,
-focusing on Selenium framework usage and reporting tools like pytest-html and Allure.
+# Purpose: Quick reference for pytest run commands focusing on Selenium framework usage and reporting tools like pytest-html and Allure.
 
-# Running Tests with Pytest and Generating Reports
-
-## Run tests with pytest-html report (lightweight HTML report)
+# Run tests with pytest-html report (lightweight HTML report)
 
 pytest --html=reports/report.html --self-contained-html
 
@@ -39,23 +36,3 @@ pytest --html=reports/report.html --self-contained-html --headless
 Run specific test file with pytest-html report:
 
 pytest tests/test_login.py --html=reports/login_report.html --self-contained-html
-
-# Pytest Fixture Scopes Overview
-
-- scope="function" (default):
-  Runs setup and teardown for each test function separately.
-  Ensures clean state per test, avoids side effects.
-
-- scope="class":
-  Runs once per test class, shared by all test methods in that class.
-  Useful to speed up tests grouped in classes.
-
-- scope="module":
-  Runs once per Python file, shared by all tests in that file.
-  Good for expensive setup reused across multiple tests.
-
-- scope="session":
-  Runs once per entire test session.
-  For very expensive resources shared globally.
-
-For Selenium testing, function scope is common to keep tests isolated.

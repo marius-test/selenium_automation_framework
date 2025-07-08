@@ -1,15 +1,2 @@
-# Core Framework Setup
-TODO [P0] webdriver manager
-TODO [P0] test configs
-TODO [P1] test data handling
-
-# Logging & Debugging
-TODO [P1] logging with loguru
-TODO [P1] screenshot on test fail
-
-# Driver & Environment Enhancements
-TODO [P2] headless driver factory
-TODO [P3] docker container
-
-# Automation & CI/CD
-TODO [P2] CI/CD github actions
+TODO [priority 2] CI/CD github actions
+TODO [priority 3] docker container

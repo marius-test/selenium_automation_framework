@@ -1,3 +1,6 @@
+# headless browser flag
+HEADLESS = False  # set True to run tests headless globally
+
 # urls
 BASE_URL = LOGIN_URL = "https://www.saucedemo.com/"
 INVENTORY_URL = "https://www.saucedemo.com/inventory.html"
