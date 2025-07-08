@@ -1,4 +1,4 @@
-# File: waits.txt
+# File: waits_guide.txt
 # Purpose: Explain input types and usage for custom Selenium wait helper functions
 
 1. wait_for_visibility(driver, locator, timeout=DEFAULT_TIMEOUT)

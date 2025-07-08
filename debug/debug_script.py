@@ -1,6 +1,5 @@
-# for unit testing and debugging code
+# for testing and debugging code
 
-import unittest
 from time import sleep
 
 if __name__ == "__main__":

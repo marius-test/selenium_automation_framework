@@ -1,5 +1,46 @@
 # File: pytest_help.txt
-# Purpose: Quick explanation of pytest fixture scopes, especially for Selenium driver fixture
+# Purpose: Quick reference for pytest run commands and fixture scopes,
+focusing on Selenium framework usage and reporting tools like pytest-html and Allure.
+
+# Running Tests with Pytest and Generating Reports
+
+## Run tests with pytest-html report (lightweight HTML report)
+
+pytest --html=reports/report.html --self-contained-html
+
+- Generates a single HTML report at reports/report.html.
+- --self-contained-html bundles all resources inside the file (easy to share).
+- You can specify test paths or markers, for example:
+
+pytest tests/ --html=reports/report.html --self-contained-html
+
+# Run tests with Allure reporting (rich, customizable reports)
+
+1. Run tests and generate results folder for Allure:
+
+pytest --alluredir=reports/allure-results
+
+2. Generate and serve the Allure report locally (requires Allure CLI installed):
+
+allure serve reports/allure-results
+
+- Or generate static report files to a directory:
+
+allure generate reports/allure-results -o reports/allure-report --clean
+
+- Then open the generated HTML report from reports/allure-report/index.html.
+
+# Examples with other options
+
+Run tests in headless mode and generate pytest-html report:
+
+pytest --html=reports/report.html --self-contained-html --headless
+
+Run specific test file with pytest-html report:
+
+pytest tests/test_login.py --html=reports/login_report.html --self-contained-html
+
+# Pytest Fixture Scopes Overview
 
 - scope="function" (default):
   Runs setup and teardown for each test function separately.
@@ -17,4 +58,4 @@
   Runs once per entire test session.
   For very expensive resources shared globally.
 
-For Selenium, function scope is common to keep tests isolated.
+For Selenium testing, function scope is common to keep tests isolated.

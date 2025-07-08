@@ -1,24 +1,23 @@
 import sys
 import os
+import pytest
 
+# add root project path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# <========== TEST CASES STARTS HERE ==========>
-
-import unittest
-import requests
-
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.by import By
-
 from utils.driver_factory import get_driver, quit_driver
-from utils.waits import wait_for_presence
 
-# TEST DATA
-URL = "https://www.saucedemo.com/"
 
-# <========== TEST CASES ENDS HERE ==========>
+@pytest.fixture(scope="function")
+def driver():
+    driver = get_driver()
+    yield driver
+    quit_driver(driver)
 
+def test_debug(driver):
+    driver.get("https://www.saucedemo.com/")
+    # add test steps here
+    pass
 
 if __name__ == "__main__":
-    print("It works!")
+    pytest.main([__file__])
