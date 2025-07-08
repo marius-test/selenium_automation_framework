@@ -12,7 +12,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\venv\Scripts\Activate.ps1
 
 # Install Required Packages
-pip install selenium pytest allure-pytest requests urllib3 webdriver-manager pyautogui pynput importlib seletools
+pip install selenium pytest pytest-html allure-pytest requests urllib3 webdriver-manager pyautogui pynput importlib seletools
 
 # Generate requirements.txt
 # Use this PowerShell-safe command to export installed packages to requirements.txt:
@@ -21,7 +21,8 @@ pip freeze | Out-File -FilePath requirements.txt -Encoding ASCII
 # Package Explanations
 selenium            Automate browser actions for UI testing
 pytest              Lightweight test runner with powerful fixtures and plugins
-allure-pytest       Integrates Allure reporting with pytest
+pytest-html         Generates simple, self-contained HTML test reports - lightweight and easy to set up
+allure-pytest       Integrates Allure reporting with pytest - provides richer, more detailed and customizable reports with advanced features
 requests            Simple HTTP requests for REST API testing
 urllib3             Low-level HTTP library (used by requests internally)
 webdriver-manager   Auto-downloads and manages browser drivers (Chrome, Firefox, etc.)

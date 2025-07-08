@@ -17,7 +17,7 @@ The framework is structured for **clarity**, **reusability**, and **modular grow
 - **Page Object Model (POM)** for test scalability and maintainability  
 - **Pytest** with fixtures for flexible test execution and setup/teardown  
 - **Driver factory** for browser setup abstraction  
-- **Allure reports** for rich test output and trend visualization  
+- **Allure and pytest-html reports** for rich and customizable test reporting  
 - **Test configuration management** via CLI options or config files  
 - **Headless/visible browser modes** and future multi-browser support  
 - **CI/CD ready** using GitHub Actions and optional Docker containerization  
@@ -29,9 +29,10 @@ The framework is structured for **clarity**, **reusability**, and **modular grow
 
 - **Python** - main programming language  
 - **Pytest** - test execution framework  
+- **pytest-html** - lightweight HTML report generator for pytest  
 - **Selenium WebDriver** - browser automation  
 - **webdriver-manager** - automatic browser driver downloads  
-- **Allure** - test reporting tool  
+- **Allure** - rich test reporting and visualization tool  
 - **Docker** - for isolated, consistent test environments  
 - **Visual Studio Code** - main IDE  
 - **PyCharm** - secondary IDE  
