@@ -10,6 +10,7 @@
         "hookwrapper",
         "loguru",
         "makereport",
+        "prio",
         "pyautogui",
         "pynput",
         "pytest",

@@ -1,2 +1,4 @@
-TODO [priority 2] CI/CD github actions
-TODO [priority 3] docker container
+TODO [prio 0] always document!
+TODO [prio 1] write pages/tests
+TODO [prio 2] CI/CD github actions
+TODO [prio 3] docker container
