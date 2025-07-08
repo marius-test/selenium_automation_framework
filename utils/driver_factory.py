@@ -11,7 +11,7 @@ def get_driver(headless=config.HEADLESS):
     if headless:
         options.add_argument("--headless")
         options.add_argument("--disable-gpu")  # recommended for headless Chrome
-        options.add_argument("--window-size=1920,1080")  # optional: set window size for headless
+        options.add_argument("--window-size=1920,1080")  # set window size for headless
     
     options.add_argument("--start-maximized")
     service = Service(ChromeDriverManager().install())
