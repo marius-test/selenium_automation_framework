@@ -5,9 +5,7 @@ from config import INVENTORY_URL
 
 class InventoryPage(BasePage):
     URL = INVENTORY_URL
-    
-    TITLE = (By.CLASS_NAME, "title")
-    
-    def get_title(self):
-        return self.get_text(self.TITLE)
+
+    APP_LOGO = (By.CLASS_NAME, "app_logo")
+    BURGER_MENU_BUTTON = (By.ID, "react-burger-menu-btn")
     
