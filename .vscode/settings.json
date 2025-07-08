@@ -4,6 +4,7 @@
         "alluredir",
         "certifi",
         "chromedriver",
+        "conftest",
         "formy",
         "geckodriver",
         "hookwrapper",

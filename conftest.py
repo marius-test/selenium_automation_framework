@@ -20,9 +20,17 @@ def driver(request):
     quit_driver(driver)
 
 
-# hook to get the test result info so we can detect failure in fixture
+# hook to get test result info so fixture can detect failures
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
     rep = outcome.get_result()
     setattr(item, "rep_" + rep.when, rep)
+
+
+# pytest hook to configure logging before tests run
+# sets a timestamped log file name to avoid overwriting previous logs
+def pytest_configure(config):
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    logfile = f"logs/test_{timestamp}.log"
+    config.option.log_file = logfile
