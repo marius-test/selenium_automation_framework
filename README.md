@@ -20,7 +20,7 @@ The framework is structured for **clarity**, **reusability**, and **modular grow
 - **Allure and pytest-html reports** for rich and customizable test reporting  
 - **Test configuration management** via CLI options or config files  
 - **Headless/visible browser modes** and future multi-browser support  
-- **CI/CD ready** using GitHub Actions and optional Docker containerization  
+- **CI/CD** using GitHub Actions and optional Docker containerization  
 - **Screenshot on test failure** planned for better debugging  
 
 ---
