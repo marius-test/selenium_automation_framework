@@ -1,4 +1,8 @@
-TODO [prio 0] always document!
-TODO [prio 1] write pages/tests
-TODO [prio 2] CI/CD github actions
-TODO [prio 3] docker container
+TODO [prio 0] Keep documentation updated
+TODO [prio 1] Finish mapping all pages with locators and actions
+TODO [prio 1] Write tests using page objects and assertions
+TODO [prio 1] Create CSV/JSON files with product info (name, description, price)
+TODO [prio 2] Integrate Allure reporting (planned)
+TODO [prio 2] Set up GitHub Actions for test automation and reporting
+TODO [prio 3] Create Docker setup for tests
+TODO [prio 3] Add Selenium Grid for parallel/multi-browser runs
