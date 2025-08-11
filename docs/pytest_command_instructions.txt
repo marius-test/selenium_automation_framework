@@ -1,18 +1,20 @@
-# File: pytest_help.txt
+# File: pytest_command_instructions.txt
 # Purpose: Run tests from the PowerShell console.
 
 # To run a single test file:
-pytest tests/test_login.py -v --html=report.html
+pytest tests/test_login.py -v
 
 # To run all tests in the /tests folder:
-pytest tests/ -v --html=report.html
+pytest tests/ -v
 
 # To run a single test function from a test file:
-pytest tests/test_login.py::test_successful_login_variants -v --html=report.html
+pytest tests/test_login.py::test_successful_login_variants -v
 
 # To run one test for debugging:
 # Add the test code inside the debug_test.py script and run it.
 python debug/debug_test.py
 
 # -v enables verbose output.
-# --html=report.html generates an HTML report (requires pytest-html package).
+
+# --html=report.html generates an HTML report.
+# This option is already set in pytest.ini, no need to add it to the command line.

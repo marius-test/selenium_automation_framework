@@ -19,6 +19,7 @@ from config import (
     PROBLEM_USER,
     PERFORMANCE_GLITCH_USER,
     VISUAL_USER,
+    ERROR_USER,
 ])
 def test_successful_login_variants(driver, username):
     login_page = LoginPage(driver)
@@ -32,7 +33,6 @@ def test_successful_login_variants(driver, username):
 # negative test: users should *not* be able to log in
 @pytest.mark.parametrize("username", [
     LOCKED_OUT_USER,
-    ERROR_USER,
 ])
 def test_login_should_fail(driver, username):
     login_page = LoginPage(driver)
