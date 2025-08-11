@@ -26,7 +26,7 @@ def test_successful_login_variants(driver, username):
     login_page.login(username, PASSWORD)
 
     inventory_page = InventoryPage(driver)
-    assert inventory_page.get_title() == "Products", f"{username} login failed unexpectedly"
+    assert inventory_page.get_text(inventory_page.TITLE) == "Products", f"{username} login failed unexpectedly"
 
 
 # negative test: users should *not* be able to log in

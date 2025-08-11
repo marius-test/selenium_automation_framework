@@ -1,38 +1,18 @@
 # File: pytest_help.txt
-# Purpose: Quick reference for pytest run commands focusing on Selenium framework usage and reporting tools like pytest-html and Allure.
+# Purpose: Run tests from the PowerShell console.
 
-# Run tests with pytest-html report (lightweight HTML report)
+# To run a single test file:
+pytest tests/test_login.py -v --html=report.html
 
-pytest --html=reports/report.html --self-contained-html
+# To run all tests in the /tests folder:
+pytest tests/ -v --html=report.html
 
-- Generates a single HTML report at reports/report.html.
-- --self-contained-html bundles all resources inside the file (easy to share).
-- You can specify test paths or markers, for example:
+# To run a single test function from a test file:
+pytest tests/test_login.py::test_successful_login_variants -v --html=report.html
 
-pytest tests/ --html=reports/report.html --self-contained-html
+# To run one test for debugging:
+# Add the test code inside the debug_test.py script and run it.
+python debug/debug_test.py
 
-# Run tests with Allure reporting (rich, customizable reports)
-
-1. Run tests and generate results folder for Allure:
-
-pytest --alluredir=reports/allure-results
-
-2. Generate and serve the Allure report locally (requires Allure CLI installed):
-
-allure serve reports/allure-results
-
-- Or generate static report files to a directory:
-
-allure generate reports/allure-results -o reports/allure-report --clean
-
-- Then open the generated HTML report from reports/allure-report/index.html.
-
-# Examples with other options
-
-Run tests in headless mode and generate pytest-html report:
-
-pytest --html=reports/report.html --self-contained-html --headless
-
-Run specific test file with pytest-html report:
-
-pytest tests/test_login.py --html=reports/login_report.html --self-contained-html
+# -v enables verbose output.
+# --html=report.html generates an HTML report (requires pytest-html package).
