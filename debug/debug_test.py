@@ -18,7 +18,7 @@ def test_debug(driver):
     page = BasePage(driver)
     page.open(BASE_URL)
     
-    assert True == True
+    assert True == False
     
 # <========== TEST CASES ENDS HERE ==========>
 
