@@ -23,7 +23,7 @@ from config import (
     VISUAL_USER,
     ERROR_USER,
 ])
-def test_login_success_for_various_users(driver, username):
+def test_login_successful(driver, username):
     login_page = LoginPage(driver)
     login_page.open()
     login_page.login(username, PASSWORD)
@@ -38,7 +38,7 @@ def test_login_success_for_various_users(driver, username):
     (INVALID_USER, PASSWORD),
     (STANDARD_USER, WRONG_PASSWORD),
 ])
-def test_login_failure_for_restricted_users(driver, username, password):
+def test_login_failed(driver, username, password):
     login_page = LoginPage(driver)
     login_page.open()
     login_page.login(username, password)
