@@ -1,8 +1,15 @@
+# PLANNED FEATURES
 TODO [prio 0] Keep documentation updated
 TODO [prio 1] Finish mapping all pages with locators and actions
 TODO [prio 1] Write tests using page objects and assertions
 TODO [prio 1] Create CSV/JSON files with product info (name, description, price)
-TODO [prio 2] Integrate Allure reporting (planned)
-TODO [prio 2] Set up GitHub Actions for test automation and reporting
-TODO [prio 3] Create Docker setup for tests
-TODO [prio 3] Add Selenium Grid for parallel/multi-browser runs
+TODO [prio 2] Integrate Allure reporting
+TODO [prio 2] Set up GitHub Actions
+TODO [prio 3] Create Docker container
+
+# BACKLOG
+TODO Add the rest of the login test scenarios:
+  - no username added
+  - no password added
+  - no username and password added (covered by no username > first check is done on username)
+  - error message text verification
