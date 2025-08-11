@@ -9,7 +9,9 @@ from config import (
     PERFORMANCE_GLITCH_USER,
     ERROR_USER,
     VISUAL_USER,
+    INVALID_USER,
     PASSWORD,
+    WRONG_PASSWORD,
 )
 
 
@@ -21,7 +23,7 @@ from config import (
     VISUAL_USER,
     ERROR_USER,
 ])
-def test_successful_login_variants(driver, username):
+def test_login_success_for_various_users(driver, username):
     login_page = LoginPage(driver)
     login_page.open()
     login_page.login(username, PASSWORD)
@@ -31,13 +33,15 @@ def test_successful_login_variants(driver, username):
 
 
 # negative test: users should *not* be able to log in
-@pytest.mark.parametrize("username", [
-    LOCKED_OUT_USER,
+@pytest.mark.parametrize("username,password", [
+    (LOCKED_OUT_USER, PASSWORD),
+    (INVALID_USER, PASSWORD),
+    (STANDARD_USER, WRONG_PASSWORD),
 ])
-def test_login_should_fail(driver, username):
+def test_login_failure_for_restricted_users(driver, username, password):
     login_page = LoginPage(driver)
     login_page.open()
-    login_page.login(username, PASSWORD)
+    login_page.login(username, password)
 
     assert login_page.is_error_displayed()
     
