@@ -25,6 +25,26 @@ The framework is structured for **clarity**, **reusability**, and **modular grow
 
 ---
 
+### Project Structure
+
+- `.vscode`: IDE settings and configurations  
+- `debug`: debugging scripts (`debug_script.py`, `debug_test.py`)  
+- `docs`: plain text commands, instructions, and setup notes  
+- `logs`: log files generated during test execution  
+- `pages`: Page Object Model classes representing UI pages  
+- `reports`: generated HTML or Allure test reports  
+- `runners`: PowerShell scripts (`.ps1`) to run tests easily  
+- `screenshots`: screenshots saved on test failures  
+- `tests`: test cases and test suites (e.g., `test_login.py`)  
+- `utils`: utility modules, helpers, and custom wait functions  
+- `venv`: Python virtual environment for the project  
+- `config.py`: configuration file with constants and test data like URLs, usernames, and passwords  
+- `conftest.py`: pytest fixtures and hooks  
+- `pytest.ini`: pytest configuration file  
+- `requirements.txt`: Python package dependencies  
+
+---
+
 ### Tools and Libraries
 
 - **Python** - main programming language  
